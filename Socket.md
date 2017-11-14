@@ -235,7 +235,7 @@ clientsock, client_address = serversock.accept()
 while True:
     #クライアントからのsendを受け取る
     rcvmsg = clientsock.recv(4096)
-    #データをPythonで読めるように変換ん
+    #データをPythonで読めるように変換
     rcvmsg=rcvmsg.decode("utf-8")
     print ('Received -> %s' % (rcvmsg))
     #データがなければ処理をwhileを抜けて処理を終了する
